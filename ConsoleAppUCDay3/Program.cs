@@ -7,7 +7,7 @@ namespace ConsoleAppUCDay3
         static void Main(string[] args)
         {
 
-            Console.WriteLine(" Enter 0 for welcome program \n Enter 1 for Employee Attendance UC1 \n Enter 2 for Calculating Employee Wage UC2");
+            Console.WriteLine(" Enter 0 for welcome program \n Enter 1 for Employee Attendance UC1 \n Enter 2 for Calculating Employee Wage UC2 \n Enter 3 for Calculating Employee Wage By Adding Part-time UC3");
             int option = Convert.ToInt32(Console.ReadLine());
             Random random = new Random();
             switch (option)
@@ -23,6 +23,10 @@ namespace ConsoleAppUCDay3
                 case 2:
                     int empCheck2 = random.Next(0, 2);
                     EmployeeWadgeUC2.EmployeeUC2(empCheck2);
+                    break;
+                case 3:
+                    int empCheck3 = random.Next(0, 3);
+                    EmployeeWadgeUC3.EmployeeUC3(empCheck3);
                     break;
                 default:
                     Console.WriteLine("Please Input Correct option");
